@@ -1,12 +1,35 @@
 <div>
-    <h2>Data Api Demo</h2>
-    <ul>
-        <li *ngFor="let item of data">
-                {{item.nombre}}
-        </li>
-
-
-    </ul>
-
-
+    <h2 class="blue-text">Data Api Festivos - Andrés Felipe Salazar Ramos</h2>
+    <h3>Técnicas de programación y laboratorio - 2023 - II</h3>
+    <img src="../../assets/udea.png" style="margin:0">
 </div>
+
+<div>
+    
+    <table id="festivos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Dia</th>
+          <th>Mes</th>
+          <th>Días de Pascua</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data">
+          <th>{{ item.nombre }}</th>
+          <td>{{ item.dia }}</td>
+          <td>{{ item.mes }}</td>
+          <td>{{ item.diasPascua }}</td>
+          
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+ 
+ 
